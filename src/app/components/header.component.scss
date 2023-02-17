@@ -1,0 +1,39 @@
+.nft_header {
+    padding: 15px 0;
+    margin-bottom: 0px;
+
+    &_id {
+        margin-bottom: 20px;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    &_title {
+        font-size: 30px;
+        color: #b9da2f;
+    }
+
+    &_title {
+        img {
+            margin-right: 15px;
+        }
+
+        span {
+            padding-left: 15px;
+        }
+        &_suffix {
+            font-size: 20px;
+            color: #a4a5a2;
+            padding-left: 10px !important;
+        }
+    }
+    &_dropdown_border {
+        background: linear-gradient(rgba(255, 255, 255, 0.11), #d7d7d700) padding-box,
+            linear-gradient(to right, #76767600, rgba(255, 255, 255, 0.11)) border-box;
+        border-radius: 50px;
+        border: 1px solid transparent;
+        padding: 1px;
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,21 @@
+<div class="nft_body text-center">
+  <div class="nft_gallery">
+    <div class="nft_gallery_slider">
+      <ngx-slick-carousel
+        class="carousel"
+        #slickModal="slick-carousel"
+        [config]="slideConfig"
+        (init)="slickInit($event)"
+        (afterChange)="afterSlickChange($event)"
+      >
+        <div ngxSlickItem *ngFor="let slide of NFTArray" class="slide">
+          <img src="{{ slide.ImagePath }}" alt="" width="100%" />
+        </div>
+      </ngx-slick-carousel>
+    </div>
+    <!--<img
+      src="/assets/img/nft-gallery-base.svg"
+      class="nft_gallery_slider_base"
+    />-->
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="nft_header text-center">
+  <div class="nft_header_id">ABSTRACT {{ getID() }}</div>
+  <div
+    class="nft_header_title d-flex align-items-center justify-content-center"
+  >
+    <img src="/assets/img/icon-nft-eth.svg" width="30" />ETH
+    <span class="text-white">{{ getETHValue() }}</span
+    ><span class="nft_header_title_suffix">({{ getAmount() }})</span>
+  </div>
+  <!--<div class="nft_header_dropdown_border">
+    <div class="nft_header_dropdown">
+      <ng-select
+        [items]="NFTArray"
+        bindLabel="Id"
+        bindValue="Id"
+        [(ngModel)]="searchItem"
+        (ngModelChange)="searchItemChanged($event)"
+        placeholder="Search NFT"
+      ></ng-select>
+    </div>
+  </div>-->
+</div>

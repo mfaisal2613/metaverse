@@ -1,0 +1,40 @@
+<button class="std-btn btn-outline" mat-stroked-button color="primary" *ngIf="isBasic" [disabled]="isDisabled" [style.minWidth.px]="width">
+    <span>
+        <span class="btn-icon-left {{iconClass}}" *ngIf="iconLeft && iconClass"></span>
+        <span [class.btn-icon-separator]="iconClass && iconSeparator" [class.separator-left]="iconLeft"
+            [class.separator-right]="!iconLeft">{{text}}</span>
+        <span class="btn-icon-right {{iconClass}}" *ngIf="!iconLeft && iconClass"></span>
+    </span>
+</button>
+<button class="std-btn btn-primary" mat-flat-button color="primary" *ngIf="isPrimary" [disabled]="isDisabled" [style.minWidth.px]="width">
+    <span>
+        <span class="btn-icon-left {{iconClass}}" *ngIf="iconLeft && iconClass"></span>
+        <span [class.btn-icon-separator]="iconClass && iconSeparator" [class.separator-left]="iconLeft"
+            [class.separator-right]="!iconLeft">{{text}}</span>
+        <span class="btn-icon-right {{iconClass}}" *ngIf="!iconLeft && iconClass"></span>
+    </span>
+</button>
+<button class="std-btn" mat-flat-button color="accent" *ngIf="isAccent" [disabled]="isDisabled" [style.minWidth.px]="width">
+    <span>
+        <span class="btn-icon-left {{iconClass}}" *ngIf="iconLeft && iconClass"></span>
+        <span [class.btn-icon-separator]="iconClass && iconSeparator" [class.separator-left]="iconLeft"
+            [class.separator-right]="!iconLeft">{{text}}</span>
+        <span class="btn-icon-right {{iconClass}}" *ngIf="!iconLeft && iconClass"></span>
+    </span>
+</button>
+<button class="std-btn" mat-flat-button color="warn" *ngIf="isWarn" [disabled]="isDisabled" [style.minWidth.px]="width"><span>
+        <span class="btn-icon-left {{iconClass}}" *ngIf="iconLeft && iconClass"></span>
+        <span [class.btn-icon-separator]="iconClass && iconSeparator" [class.separator-left]="iconLeft"
+            [class.separator-right]="!iconLeft">{{text}}</span>
+        <span class="btn-icon-right {{iconClass}}" *ngIf="!iconLeft && iconClass"></span>
+    </span>
+</button>
+
+<a mat-flat-button href="https://www.google.com/" target="_blank" *ngIf="isLink" [disabled]="isDisabled" [style.minWidth.px]="width">
+    <span>
+        <span class="btn-icon-left {{iconClass}}" *ngIf="iconLeft && iconClass"></span>
+        <span [class.btn-icon-separator]="iconClass && iconSeparator" [class.separator-left]="iconLeft"
+            [class.separator-right]="!iconLeft">{{text}}</span>
+        <span class="btn-icon-right {{iconClass}}" *ngIf="!iconLeft && iconClass"></span>
+    </span>
+</a>

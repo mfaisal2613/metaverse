@@ -1,0 +1,57 @@
+.nft_footer_menu {
+    margin-bottom: 20px;
+
+    &_item {
+        margin: 16px;
+        cursor: pointer;
+        font-size: 16px;
+
+        &.active,
+        &:hover {
+            color: #fff;
+
+            .icon_menu_nft {
+                &_gallery {
+                    background-image: url(/assets/img/icon-menu-nft-gallery-active.svg);
+                }
+                &_buy {
+                    background-image: url(/assets/img/icon-menu-nft-buy-active.svg);
+                }
+                &_loan {
+                    background-image: url(/assets/img/icon-menu-nft-loan-active.svg);
+                }
+            }
+        }
+
+        &:hover {
+            transform: scale(1.15);
+        }
+
+        &.active {
+            :hover {
+                transform: scale(1);
+            }
+        }
+
+        i {
+            margin: 0 auto 10px;
+            width: 40px;
+            height: 40px;
+            display: block;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .icon_menu_nft {
+            &_gallery {
+                background-image: url(/assets/img/icon-menu-nft-gallery.svg);
+            }
+            &_buy {
+                background-image: url(/assets/img/icon-menu-nft-buy.svg);
+            }
+            &_loan {
+                background-image: url(/assets/img/icon-menu-nft-loan.svg);
+            }
+        }
+    }
+}
